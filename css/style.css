@@ -187,7 +187,6 @@ body {
   opacity: 0.3;
 }
 
-
 /* Навбар */
 .main-nav {
   display: flex;
@@ -256,6 +255,49 @@ body {
   opacity: 0.3;
 }
 
+@media screen and (max-width: 1170px) {
+  .page-header {
+    width: 90%;
+    margin-right: 0;
+  }
+
+  .services-content {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+
+  .location {
+    margin-right: 50px;
+    margin-left: 30px;
+  }
+
+  .main-nav {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .site-navigation-item:last-child {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .logo {
+    margin-bottom: 50px;
+  }
+
+  .site-navigation-item {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .services-content {
+    justify-content: center;
+  }
+}
+
 /* main */
 
 .main-content {
@@ -266,6 +308,7 @@ body {
 
 .hero {
   margin-bottom: 120px;
+  word-wrap: break-word;
 }
 
 .hero h1 {
@@ -281,6 +324,31 @@ body {
 
 .hero img {
   display: block;
+  width: 1170px;
+  height: 466px;
+}
+
+@media screen and (max-width: 1235px) {
+  .main-content {
+    width: 100%;
+    /* padding: 0 5px; */
+    padding: 0;
+  }
+
+  .hero img {
+    margin-right: 60px;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero h1 {
+    font-size: 34px;
+    margin-right: 50px;
+    margin-left: 20px;
+  }
 }
 
 /* blog */
@@ -290,10 +358,14 @@ body {
   justify-content: space-between;
   width: 1030px;
   margin: 0 auto;
+
+  word-wrap: break-word;
 }
 
 .blog-article-content {
   width: 400px;
+
+  word-wrap: break-word;
 }
 
 .blog-article-img {
@@ -381,6 +453,35 @@ body {
 .blog-article.short .more {
   /* Показываем элемент в свернутой статье */
   display: inline-block;
+}
+
+@media screen and (max-width: 1024px) {
+  .blog-article {
+    width: 100%;
+
+    flex-wrap: wrap;
+  }
+
+  .blog-article-2 .blog-article-content {
+    text-align: left;
+  }
+
+  .blog-article-content {
+    width: 100%;
+  }
+
+  .blog-article-2 {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .blog-article-img {
+    margin-right: 60px;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+  }
 }
 
 /* rent */
@@ -568,6 +669,23 @@ body {
   display: none;
 }
 
+@media screen and (max-width: 1172px) {
+  .cards.list .card {
+    width: 90%;
+  }
+
+  .cards.list .card-content {
+    margin-right: auto;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .card-view-button-list {
+    display: none;
+  }
+}
+
 /* gallery */
 
 #gallery {
@@ -633,6 +751,58 @@ body {
 
 .preview-list img {
   display: block;
+  width: 170px;
+  height: 150px;
+}
+
+@media screen and (max-width: 1200px) {
+  .active-photo {
+    margin-bottom: 30px;
+  }
+
+  .preview-list {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .preview-list img {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1172px) {
+  .slider {
+    flex-wrap: wrap;
+  }
+
+  .active-photo {
+    width: 100%;
+    height: auto;
+  }
+
+  .preview-list {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .preview-list img {
+    width: 130px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 518px) {
+  .preview-list img {
+    width: 80px;
+    height: auto;
+  }
 }
 
 /* news */
@@ -777,6 +947,17 @@ body {
   color: #8693a4;
 }
 
+@media screen and (max-width: 785px) {
+  #news {
+    width: 100%;
+  }
+
+  .post-img img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 /* contacts */
 
 #contacts {
@@ -876,6 +1057,19 @@ body {
   opacity: 0.3;
 }
 
+@media screen and (max-width: 1080px) {
+  iframe {
+    margin-right: 30px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #contacts {
+    flex-direction: column;
+  }
+}
 /* footer */
 
 .main-footer {
@@ -975,6 +1169,42 @@ body {
 
 .copyright {
   margin: 0;
+}
+
+@media screen and (max-width: 1250px) {
+  .main-footer {
+    margin: 0;
+  }
+
+  .footer-container {
+    width: 90%;
+  }
+  .footer-navigation-topics {
+    flex-wrap: wrap;
+    /* word-wrap: break-word; */
+  }
+
+  .footer-navigation-item {
+    width: 90%;
+  }
+
+  .footer-column {
+    margin-right: 50px;
+    /* word-wrap: break-word; */
+  }
+}
+
+@media screen and (max-width: 935px) {
+  .footer-navigation {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 533px) {
+  .main-footer .logo img {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 /* Выделение активной кнопки */
